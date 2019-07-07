@@ -8,6 +8,7 @@ class Subscription extends Model {
         sequelize,
       }
     );
+
     return this;
   }
 
