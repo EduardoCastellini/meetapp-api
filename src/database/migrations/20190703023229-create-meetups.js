@@ -28,14 +28,14 @@ module.exports = {
         references: { model: 'users', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
-        allowNull: false,
+        allowNull: true,
       },
       banner_id: {
         type: Sequelize.INTEGER,
         references: { model: 'files', key: 'id' },
         onUpdate: 'CASCADE',
-        onDelete: 'SET NULL',
-        allowNull: false,
+        onDelete: 'CASCADE',
+        allowNull: true,
       },
       created_at: {
         type: Sequelize.DATE,
