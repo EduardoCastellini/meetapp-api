@@ -31,5 +31,6 @@ routes.put(
 );
 
 routes.post('/subscription/:meetupId', SubscriptionController.store);
+routes.get('/subscription', SubscriptionController.index);
 
 export default routes;
